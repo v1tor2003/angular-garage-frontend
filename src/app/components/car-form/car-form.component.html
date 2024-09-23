@@ -1,0 +1,48 @@
+<form class="form" [formGroup]="carForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Marca</mat-label>
+    <input
+      matInput
+      placeholder="BMW"
+      formControlName="brand"
+      required
+    />
+    @if (brand?.hasError('required')) {
+      <mat-error>Marca é requerida.</mat-error>
+    }
+    @if (brand?.hasError('minlength')) {
+      <mat-error>Marca deve ter pelo menos 3 letras.</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Modelo</mat-label>
+    <input
+      matInput
+      placeholder="M3"
+      formControlName="model"
+      required
+    />
+    @if (model?.hasError('required')) {
+      <mat-error>Modelo é requerido.</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Ano de Fabricação</mat-label>
+    <input
+      matInput
+      placeholder="1998"
+      formControlName="year"
+      required
+    />
+    @if (year?.hasError('required')) {
+      <mat-error>Ano de Fabricação é requerido.</mat-error>
+    }
+    @if (year?.hasError('min')) {
+      <mat-error>Ano de Frabricação deve ser maior que 1900.</mat-error>
+    }
+  </mat-form-field>
+  <div class="actions">
+    <button mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+    <button mat-raised-button type="submit" [disabled]="carForm.invalid || carForm.pending">Enviar</button>
+  </div>
+</form>

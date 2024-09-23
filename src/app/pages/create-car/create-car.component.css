@@ -1,0 +1,12 @@
+h3 {
+  font-weight: 200;
+  color: var(--mat-blue);
+  padding-top: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

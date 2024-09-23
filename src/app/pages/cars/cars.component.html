@@ -1,0 +1,28 @@
+@if(garageIsEmpty()) {
+  <div class="info">
+    <h3>Hmm, nada por aqui...</h3>
+    <p>Você pode adicionar novos carros ao clicar no botão de criar acima!</p>
+  </div>
+}
+@else { 
+  <div class="container responsive-grid">
+    @for(car of cars; track car.id) {
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ car.year }}  {{ car.model }} </mat-card-title>
+        </mat-card-header>
+        <br />
+        <mat-card-content>
+          <br />
+          <p>
+            {{ car.brand }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="editCar(car)">Editar</button>
+          <button mat-button color="warn" (click)="openDeleteDialog(car)">Deletar</button>
+        </mat-card-actions>
+      </mat-card>
+    }
+  </div>
+}

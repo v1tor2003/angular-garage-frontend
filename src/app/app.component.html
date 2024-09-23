@@ -1,2 +1,7 @@
-<div>it works</div>
-<router-outlet />
+<div class="app-wrapper">
+  <app-header [showButton]="canCreate()" (createEvent)="handleCreateEvent()"></app-header>
+  <div class="container">
+    <router-outlet />
+  </div>
+  <app-footer></app-footer>
+</div>

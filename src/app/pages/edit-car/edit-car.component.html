@@ -1,0 +1,5 @@
+
+<div class="container">
+  <h3>Edite o carro {{ car.year }} {{ car.model}}:</h3>
+  <app-car-form [car]="car" (submitForm)="handleCarEditForm($event)"></app-car-form>
+</div>

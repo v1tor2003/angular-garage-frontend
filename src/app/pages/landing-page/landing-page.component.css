@@ -1,0 +1,37 @@
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+  height: 100%;
+  text-align: center;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hero h3 {
+  font-weight: 200;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.slogan {
+  font-size: 1rem;
+  color: #546e7a;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    margin: 2rem;
+  }
+}

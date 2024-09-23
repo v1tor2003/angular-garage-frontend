@@ -1,0 +1,25 @@
+.modal-title {
+  text-align: center;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.modal-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 200;
+  color: var(--mat-blue);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.mat-dialog-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

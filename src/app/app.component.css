@@ -1,0 +1,17 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-header {
+  flex: 0 0 auto;
+}
+.container {
+  height: 100%;
+  flex: 1;
+}
+
+app-footer {
+  flex: 0 0 auto;
+}

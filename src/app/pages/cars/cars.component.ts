@@ -25,6 +25,7 @@ export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
   ) {
     this.create = this.create.bind(this)
   }
+
   ngOnInit(): void {
     this.carService.getCars().subscribe(data => {
       this.cars = data
@@ -66,7 +67,7 @@ export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
     })
   }
 
-  deleteCar(carId: number): void {
+  deleteCar(carId: string): void {
     this.carService.deleteCar(carId).subscribe({
       next: () => {
         this.cars = this.cars.filter(car => car.id !== carId)

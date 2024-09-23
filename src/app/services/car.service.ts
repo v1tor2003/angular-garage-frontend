@@ -20,7 +20,7 @@ export class CarService {
     return this.httpClient.get<Car[]>(CarService.apiUrl);
   }
 
-  getCar(id: number): Observable<Car> {
+  getCar(id: string): Observable<Car> {
     return this.httpClient.get<Car>(`${CarService.apiUrl}/${id}`);
   }
 
@@ -32,7 +32,7 @@ export class CarService {
     return this.httpClient.put<Car>(`${CarService.apiUrl}/${car.id}`, car);
   }
 
-  deleteCar(id: number): Observable<Car> {
+  deleteCar(id: string): Observable<Car> {
     return this.httpClient.delete<Car>(`${CarService.apiUrl}/${id}`);
   }
 }

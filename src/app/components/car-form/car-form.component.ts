@@ -23,7 +23,7 @@ export class CarFormComponent implements OnInit{
     private location: Location
   ){
     this.carForm = new FormGroup({
-      id: new FormControl(this.car?.id),
+      ...(this.location.isCurrentPathEqualTo('/create') ? {} : { id: new FormControl(this.car?.id) }),
       brand: new FormControl(this.car?.brand, [
         Validators.required,
         Validators.minLength(3)

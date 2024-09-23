@@ -1,5 +1,13 @@
 
 <div class="container">
-  <h3>Edite o carro {{ car.year }} {{ car.model}}:</h3>
-  <app-car-form [car]="car" (submitForm)="handleCarEditForm($event)"></app-car-form>
+  @if(car){
+    <h3>Edite o carro {{ car.year }} {{ car.model}}:</h3>
+    <app-car-form [car]="car" (submitForm)="handleCarEditForm($event)"></app-car-form>
+  }
+  @else {
+    <div class="info">
+      <h3>Ops, nada por aqui...</h3>
+      <p>Parece que tivemos problemas ao encontrar esse carro, tente de novo depois.</p>
+    </div>
+  }
 </div>

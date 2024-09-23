@@ -1,9 +1,6 @@
-Here's a sample `README.md` for your Angular car garage management project:
+# Angular Garage
 
-```markdown
-# Car Garage Management System
-
-Welcome to the Car Garage Management System! This application allows users to manage a garage, including performing CRUD operations on cars and filtering them by brand.
+Welcome to the Angular Garage Management System! This application allows users to manage a garage, including performing CRUD operations on cars
 
 ## Table of Contents
 
@@ -16,7 +13,6 @@ Welcome to the Car Garage Management System! This application allows users to ma
 ## Features
 
 - Add, edit, and delete car entries
-- Filter cars by brand
 - Responsive design using Angular Material
 - User-friendly interface for garage management
 
@@ -33,12 +29,12 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/car-garage-management.git
+   git clone https://github.com/yourusername/AngularGarage.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd car-garage-management
+   cd AngularGarage
    ```
 
 3. Install the dependencies:
@@ -51,7 +47,12 @@ To get a local copy up and running, follow these steps:
    ng serve
    ```
 
-5. Open your browser and go to `http://localhost:4200/`.
+5. Start the json server:
+   ```bash
+   npm run json-server
+   ```
+
+6. Open your browser and go to `http://localhost:4200/`.
 
 ## Usage
 

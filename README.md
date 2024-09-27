@@ -1,64 +1,72 @@
 # Angular Garage
 
-Welcome to the Angular Garage Management System! This application allows users to manage a garage, including performing CRUD operations on cars
+Bem-vindo ao Sistema de Gestão Angular Garage! Este projeto foi desenvolvido como parte das atividades do módulo Angular da Residência em Software Restic 36, na trilha full stack. Ele permite que os usuários gerenciem uma garagem de forma simples e eficiente, incluindo a realização de operações CRUD em carros.
 
-## Table of Contents
+## Índice
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Recursos](#recursos)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Licença](#licença)
 
-## Features
+## Recursos
 
-- Add, edit, and delete car entries
-- Responsive design using Angular Material
-- User-friendly interface for garage management
+- Adicionar, editar e excluir registros de carros
+- Design responsivo usando Angular Material
+- Interface amigável para gestão da garagem
 
-## Technologies Used
+## Tecnologias Utilizadas
 
 - [Angular](https://angular.io/)
 - [Angular Material](https://material.angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/) (for development)
+- [Node.js](https://nodejs.org/) (para desenvolvimento)
 
-## Installation
+## Instalação
 
-To get a local copy up and running, follow these steps:
+Para obter uma cópia local e em funcionamento, siga estes passos:
 
-1. Clone the repository:
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/yourusername/AngularGarage.git
+   git clone https://github.com/seuusuario/AngularGarage.git
    ```
 
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
    ```bash
    cd AngularGarage
    ```
 
-3. Install the dependencies:
+3. Instale as dependências:
    ```bash
    npm install
    ```
 
-4. Start the development server:
+4. Inicie o servidor de desenvolvimento:
    ```bash
    ng serve
    ```
 
-5. Start the json server:
+5. Inicie o servidor JSON:
    ```bash
    npm run json-server
    ```
 
-6. Open your browser and go to `http://localhost:4200/`.
+6. Abra seu navegador e vá para `http://localhost:4200/`.
 
-## Usage
+## Uso
 
-- Navigate to the 'Cars' page to view, add, or edit cars in the garage.
+- Navegue até a página 'Carros' para visualizar, adicionar ou editar carros na garagem.
 
-## License
+## Possíveis Melhorias
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Implementar testes automatizados para garantir a qualidade do código.
+- Adicionar funcionalidades de busca, filtragem e paginação para facilitar a localização de carros.
+- Melhorar a acessibilidade da interface do usuário.
+- Integrar autenticação de usuário para gerenciamento de acesso.
+- Expandir o sistema para permitir a gestão de outros veículos além de carros.
+- Adicionar um sistema de notificações para alertas de manutenção e prazos.
 
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.

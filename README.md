@@ -29,12 +29,12 @@ Para obter uma cópia local e em funcionamento, siga estes passos:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/AngularGarage.git
+   git clone https://github.com/seuusuario/angular-garage-frontend.git
    ```
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd AngularGarage
+   cd angular-garage-frontend
    ```
 
 3. Instale as dependências:
